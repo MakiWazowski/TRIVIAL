@@ -3,120 +3,66 @@ Quizzly = ( function(){
 	var puntaje = 0;
 	var respuestas = [];
 	var preguntadas = [
-			//pregunta1 
-			{
-				pregunta:"¿Cuál de las siguientes invocaciones es correcta?",
-				opciones: [
-					"function : myFunction()",
-					"function myFunction()",
-					"declare myFunction()",
-					"new myFunction"
-				],
-				respuesta: 999/333 - 2 //1
-			},
-			//pregunta2 
-			{
-				pregunta:"¿Cuál de las siguientes expresiones es correcta?",
-				opciones: [
-					"Resultado=myFunction",
-					"Call myFunction()",
-					"myFunction",
-					"Resultado=myFunction()"
-				],
-				respuesta: 4767/1589 //3
-			},
-			//pregunta3
-			 {
-				pregunta:"Dada la función con la firma: miFuncion(a,b) ¿Cuál invocación es correcta?",
-				opciones: [
-					"MiFuncion a,b",
-					"a=MiFuncion(b)",
-					"MiFuncion(x,y)",
-					"Ninguna de las anteriores"
-				],
-				respuesta: 11%3//2
-			},
-			//pregunta4 
-			{
-				pregunta:"¿Cuál de las siguientes afirmaciones es verdadera?",
-				opciones: [
-					"Una variable local se debe declarar con var dentro de una función",
-					"Una variable local se declara con o sin var dentro de una función",
-					"No es necesario declarar una variable para que sea local",
-					"Ninguna de las anteriores"
-					],
-				respuesta: 0
-			},
-			//pregunta5
-			 {
-				pregunta:"¿Cómo se introducen comentarios en la sintaxis Javascript?",
-				opciones: [
-					"\"&lt!-- Esto es comentario --&gt\"",
-					"\"&lt Esto es un comentario \"&gt",
-					"/* Esto es un comentario  ",
-					"Ninguna de las anteriores"	
-				],
-				respuesta: 2664/888 
-			},
-			//pregunta6
-			 {
-				pregunta:"¿Cómo  se escribe un condicional para que sea verdadero sólo si i es distinta de 5",
-				opciones: [
-					"if (i => 5)",
-					"if (i != 5)",
-					"if =! 5 then  ",
-					"if > 5"
-
-				],
-				respuesta: 777/777//1
-			},
-			//pregunta7
-			 {
-				pregunta:"¿Un array se define usando?",
-				opciones: [
-					"var myarray = new array();",
-					"var myarray = new Array[];",
-					"var myarray = new Array();",
-					"Ninguna de las anteriores"
-				],
-				respuesta:  886/443// 2
-			},
-			//pregunta8
-			 {
-				pregunta:"¿Con cuál de estas sentencias es posible agregar un elemento al final de un vector?",
-				opciones: [
-					"arr[arr.length] = value;",
-					"arr[arr.length+1] = new Arrays();",
-					"arr[arr.length-1] = value;",
-					"arr[arr.length*1] = value;"
-
-				],
-				respuesta: 0
-			},
-			//pregunta9 
-			{
-				pregunta:"¿Con cuál de estas sentencias se genera un número aleatorio?",
-				opciones: [
-					"Math.rnd",
-					"Math.random",
-					"Math.random()",
-					"Randomize()"
-
-				],
-				respuesta:  666/333 //2
-			},
-			//pregunta10
-			 {
-				pregunta:"¿Cómo se redondea el número 7.25 al entero más cercano?",
-				opciones: [
-					"round(7.25)",
-					"Math.rnd(7.25)",
-					"rnd(7.25)",
-					"Math.round(7.25)"
-				],
-				respuesta:  13 % 5 //3 
-			
-			}];	
+            //pregunta 1
+        {
+            pregunta:"¿Cuáles son los cinco tipos de sabores primarios?",
+            opciones:["dulce, saldo, amargo y ácido","dulce, amargo, ácido y salado","amargo, ácido, salado y umami","dulce, amargo, ácido, salado y umami"],
+            respuesta:2
+        },
+        {
+            //pregunta 2
+            pregunta:"¿Cuál es el lugar más frío de la tierra?",
+            opciones:["Antártida","Polo Norte","Polo Sur","La casa de yeti"],
+            respuesta:0
+        },
+        {
+            //pregunta 3
+            pregunta:"¿Quién escribió La Odisea?",
+            opciones:["Unamuno","Azorín","Homero","Valle-Inclán"],
+            respuesta:2
+        },
+        {
+            //pregunta 4
+            pregunta:"¿Cuál es el río más largo del mundo?",
+            opciones:["Misisipi","Tajo","Nilo","Amazonas"],
+            respuesta:3
+        },
+        {
+            //pregunta 5
+            pregunta:"¿Qué tipo de animal es la ballena?",
+            opciones:["Ovovíparos","Pez","Herbívoro","Mamífero"],
+            respuesta:3
+        },
+        {
+            //pregunta 6
+            pregunta:"¿Qué son los humanos: omnívoros, herbívoros o carnívoros?",
+            opciones:["Herbívoros","Omnivoros","Carnivoros","Hay gente de todo en este mundo"],
+            respuesta:1
+        },
+        {
+            //pregunta 7
+            pregunta:"¿En qué se especializa la cartografía?",
+            opciones:["Cartón","Ortografía","Mapas","Estudio del estudio"],
+            respuesta:2
+        },
+        {
+            //pregunta 8
+            pregunta:"¿Cuál es el color que representa la esperanza?",
+            opciones:["Verde","Morado","Amarillo","Violeta"],
+            respuesta:0
+        },{
+            //pregunta 9
+            pregunta:"¿Cuál es la capital de Croacia?",
+            opciones:["Dubrovnik","Zagreb","Split","Zadar"],
+            respuesta:1
+        },
+        {
+            //pregunta 10
+            pregunta:"¿Qué instrumento tocaba Paco de Lucía?",
+            opciones:["Tambor","Violin","Piano","Guitarra"],
+            respuesta:3
+        }
+    ];		
 	return {
 		getCantidad	: function(){
 			return preguntadas.length;

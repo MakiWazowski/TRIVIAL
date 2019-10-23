@@ -15,55 +15,65 @@ function responder(){
     var e=Quizzly.setCounter(),a=$(this).attr("id");Quizzly.setRespuestas(a),cargarSection(++e)
 }
 Quizzly=function(){var e=0,a=0,n=[],r=[{
-            pregunta:"",
-            opciones:["","","",""],
-            respuesta:1
+        //pregunta 1
+            pregunta:"¿Cuáles son los cinco tipos de sabores primarios?",
+            opciones:["dulce, saldo, amargo y ácido","dulce, amargo, ácido y salado","amargo, ácido, salado y umami","dulce, amargo, ácido, salado y umami"],
+            respuesta:2
         },
         {
-            pregunta:"",
-            opciones:["","","",""],
+            //pregunta 2
+            pregunta:"¿Cuál es el lugar más frío de la tierra?",
+            opciones:["Antártida","Polo Norte","Polo Sur","La casa de yeti"],
+            respuesta:0
+        },
+        {
+            //pregunta 3
+            pregunta:"¿Quién escribió La Odisea?",
+            opciones:["Unamuno","Azorín","Homero","Valle-Inclán"],
+            respuesta:2
+        },
+        {
+            //pregunta 4
+            pregunta:"¿Cuál es el río más largo del mundo?",
+            opciones:["Misisipi","Tajo","Nilo","Amazonas"],
             respuesta:3
         },
         {
-            pregunta:"",
-            opciones:["","","",""],
-            respuesta:2
-        },
-        {
-            pregunta:"",
-            opciones:["","","",""],
-            respuesta:2
-                },
-        {
-           pregunta:"",
-            opciones:["","","",""],
+            //pregunta 5
+            pregunta:"¿Qué tipo de animal es la ballena?",
+            opciones:["Ovovíparos","Pez","Herbívoro","Mamífero"],
             respuesta:3
         },
         {
-            pregunta:"",
-            opciones:["","","",""],
+            //pregunta 6
+            pregunta:"¿Qué son los humanos: omnívoros, herbívoros o carnívoros?",
+            opciones:["Herbívoros","Omnivoros","Carnivoros","Hay gente de todo en este mundo"],
             respuesta:1
         },
         {
-            pregunta:"",
-            opciones:["","","",""],
+            //pregunta 7
+            pregunta:"¿En qué se especializa la cartografía?",
+            opciones:["Cartón","Ortografía","Mapas","Estudio del estudio"],
             respuesta:2
         },
         {
-            pregunta:"",
-            opciones:["","","",""],
+            //pregunta 8
+            pregunta:"¿Cuál es el color que representa la esperanza?",
+            opciones:["Verde","Morado","Amarillo","Violeta"],
             respuesta:0
         },{
-            pregunta:"",
-            opciones:["","","",""],
-            respuesta:2
+            //pregunta 9
+            pregunta:"¿Cuál es la capital de Croacia?",
+            opciones:["Dubrovnik","Zagreb","Split","Zadar"],
+            respuesta:1
         },
         {
-            pregunta:"",
-            opciones:["","","",""],
+            //pregunta 10
+            pregunta:"¿Qué instrumento tocaba Paco de Lucía?",
+            opciones:["Tambor","Violin","Piano","Guitarra"],
             respuesta:3
         }
-    ];
+    ];	
     return{
         getCantidad:function(){
             return r.length

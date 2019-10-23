@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trivial</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <style>
+            body {
+                background-image: url("fondo.jpg"); /* The image used */
+                background-color: #cccccc; /* Used if the image is unavailable */
+                height: 650px; /* You must set a specified height */
+                background-position: center; /* Center the image */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-size: cover;
+            }
+            .form-control{
+                width: 300px;
+            }
+            .container{
+                /*Para centar el formulario al centro de la página */
+                margin-top: 150px;
+                width: 700px;
+                height: 500px;
+                
+                /*Borde del formulario*/
+                padding: 1em;
+                border: 0px solid #CCC;
+                border-radius: 1em;
+            }
+            .row{
+                margin: 100px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-1 col-sm-1">
+                </div>
+
+                <div class = "col-lg-7 col-sm-9">
+                    <form action="principal.html">
+                        <div class="form-group">
+                            <label for="exampleInputUser">Usuario</label>
+                            <input type="text" class="form-control" id="exampleInputUser" placeholder="Usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recordar Contraseña</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

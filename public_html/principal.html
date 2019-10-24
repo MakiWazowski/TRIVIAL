@@ -7,12 +7,13 @@
         <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <style>
             body{
-                background-image: url("fondo.jpg"); /* The image used */
-                background-color: #cccccc; /* Used if the image is unavailable */
-                height: 650px; /* You must set a specified height */
-                background-position: center; /* Center the image */
-                background-repeat: no-repeat; /* Do not repeat the image */
-                background-size: cover;
+                background: url("fondo.jpg") no-repeat center center fixed;
+                background-size: 100% 100%;
+                position: relative;
+                padding-top: 0;
+                background-color: #cccccc; 
+                height: 100%; 
+                width: 100%; 
             }
             .btn-block{
                 background-color: bisque;
@@ -24,7 +25,6 @@
             .container{
                 /*Para centar el formulario al centro de la página */
                 margin-top: 150px;
-                height: 500px;
                 
                 /*Borde del formulario*/
                 padding: 0.5em;
@@ -54,7 +54,7 @@
         <br>
         <div class = "container">
             <div class = "row">
-                <div class = "col-lg-5 col-sm-2">
+                <div class = "col-lg-5 col-sm-7">
                     
                     <p>
                         ¡¡ BIENVENIDO A PREGUNTAS Y RESPUESTAS !!
@@ -80,7 +80,7 @@
                 
                 
 
-                <div class = "col-lg-6 col-sm-9">
+                <div class = "col-lg-6 col-sm-5">
                     
                     <ACRONYM title=" Aqui responderas preguntas dentro de la categoria de cultura general: desde literatura a geografia y biologia junto a otros">
                     <form action="cultura general/index.html" >

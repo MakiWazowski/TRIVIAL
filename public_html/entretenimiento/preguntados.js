@@ -16,61 +16,61 @@ function responder(){
 }
 Quizzly=function(){var e=0,a=0,n=[],r=[{
             //pregunta 1
-            pregunta:"¿Cuántos mangos por lado tiene el futbolín?",
-            opciones:["Dos","Tres","Cuatro","Cinco"],
+            pregunta:"¿Cómo se llamaba el personaje que interpretaba John Travolta en Grease?",
+            opciones:["Danny Puño","Danny Grease","Danny Zuko","Danny Chulo"],
             respuesta:2
         },
         {
             //pregunta 2
-            pregunta:"¿Cuál es el estilo de natación más rápido?",
-            opciones:["Crol","Espalda","Mariposa","Pecho"],
+            pregunta:"¿Qué personaje famoso lidera la banda llamada Nancys Rubias?",
+            opciones:["Mario Vaquerizo","Nacho Canut","Alaska","Nacho Vidal"],
             respuesta:0
         },
         {
             //pregunta 3
-            pregunta:"¿Cuántos jugadores componen un equipo de rugby?",
-            opciones:["11","12","15","21"],
+            pregunta:"¿A qué película de Disney pertenece la canción Un mundo ideal?",
+            opciones:["Pocahontas","Mulán","Aladdin","Hércules"],
             respuesta:2
         },
         {
             //pregunta 4
-            pregunta:"¿Cuál de las siguientes modalidades no forma parte del deporte rural vasco?",
-            opciones:["Arrastre de piedra","Lanzamiento de fardo","Corte de troncos","Desintegramiento de piedras"],
+            pregunta:"¿Qué actor interpretaba a Hache en la película 3MSC?",
+            opciones:["Hugo Silva","Miguel Ángel Silvestre","Dani Martin","Mario Casas"],
             respuesta:3
         },
         {
             //pregunta 5
-            pregunta:"¿Cuántos puntos vale un tiro libre encestado en baloncesto?",
-            opciones:["Dos","Tres","Depende","Uno"],
+            pregunta:"¿A qué hace referencia 'La milla verde'??",
+            opciones:["A un prado cercano","A una carrera","A la carcel","Al corredor de la muerte"],
             respuesta:3
         },
         {
             //pregunta 6
-            pregunta:"¿Cuánto dura un partido de fútbol?",
-            opciones:["45 minutos","90 minutos","75 minutos","80 minutos"],
+            pregunta:"¿Cómo se llama el protagonista de la saga Indiana Jones?",
+            opciones:["Jack Nicholson","Harrison Ford","Robin Williams","Michael Fox"],
             respuesta:1
         },
         {
             //pregunta 7
-            pregunta:"¿Dónde se inventó el tenis de mesa?",
-            opciones:["China","Inglaterra","Korea del sur","Japón"],
+            pregunta:"¿A quién se considera el Rey del Pop",
+            opciones:["Justin Bieber","Zayn Malik","Michael Jackson","Zac Efron"],
             respuesta:2
         },
         {
             //pregunta 8
-            pregunta:"¿Quién quedó número 1 del mundo de tenis en 2008?",
-            opciones:["Rafael Nadal","Roger Federer","Novak Djokovic","Carlos Moyá"],
+            pregunta:"¿Cómo se llama el pájaro símbolo de los Juegos del Hambre?",
+            opciones:["Sinsajo","Lechuza","Gale","Llamas"],
             respuesta:0
         },{
             //pregunta 9
-            pregunta:"¿Cuál es el club de fútbol más antiguo de España?",
-            opciones:["Athelic Club de Bilbao","Recreativo de Huelva","Real Madrid","F.C. Barclona"],
+            pregunta:"¿Qué personaje de Disney perdió su zapato de cristal?",
+            opciones:["Tiana","Cenicienta","Blancanieves","La Sirenita"],
             respuesta:1
         },
         {
             //pregunta 10
-            pregunta:"¿Qué gimnasta española ha disputado cuatro juegos Olímpicos?",
-            opciones:["Carolina Rodriguez","Natalia García","Julia Usón","Almudena Cid"],
+            pregunta:"¿Qué Beatle fue asesinado por un fan?",
+            opciones:["George Harrison","Ringo Star","Ninguno","Jonh Lennon"],
             respuesta:3
         }
     ];	

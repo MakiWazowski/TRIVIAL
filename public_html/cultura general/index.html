@@ -5,7 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>YO PREGUNTO, TU RESPONDES</title>
 	<link rel="stylesheet" type="text/css" href="CSS.css">
-        
+        <style>
+            #cuadrito{
+            width:100px;
+            padding:50px;
+            margin:00px auto;
+            border-radius:10px;
+            font-weight: bold;
+            color: #DAA3A3;
+          }
+          #segundos{
+            width:30px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #DAA3A3;
+            border:none;
+          }
+          #contador{
+              font-size: 50px;
+            font-weight: bold;
+            color: #a3bad8;
+          }
+          #boton{
+            width:100px;
+            height:40px;
+            border:none;
+            font-weight: bold;
+            color: #DAA3A3;
+          }
+          #nuevo{
+            width:100px;
+            height:40px;
+            border:none;
+            font-weight: bold;
+            color: #DAA3A3;
+          }
+        </style>   
         
     <script> 
         //set minutes 
@@ -18,7 +53,36 @@
         function countdown() { 
             setTimeout('Decrement()', 60); 
         } 
-  
+        var contador = 1;
+        var time; 
+        var on = false;
+        var seconds = 0;
+
+
+        var startTime = function(){
+        seconds++;
+        time = setTimeout("startTime()",1000);
+         if(seconds >= 10){ 
+         on = false;
+         clearTimeout(time);
+
+         }
+
+        document.getElementById("segundos").value = seconds;	
+        }
+
+
+        function cambiar()
+        {
+
+          if(onclick = respuesta){
+            document.getElementById('contador').innerHTML = contador + 1;
+          }else{
+        document.getElementById('contador').innerHTML = contador += 1;
+          }
+
+        }
+        
         //Decrement function decrement the value. 
         function Decrement() { 
             if (document.getElementById) { 
@@ -77,40 +141,41 @@
     </script>
 </head>
 
-    <body onload="countdown();">
+<body onload="countdown();">
+    <div id="cuadrito"><center>
+        Tiempo: 
+        <br/><input id="minutes" type="text" style="width: 10px; 
+        border: none; font-size: 16px;  
+        font-weight: bold; color: black;"><font size="5">:</font> 
+        <input id="seconds" type="text" style="width: 20px; 
+        border: none; font-size: 16px; 
+        font-weight: bold; color: black;"> 
+      <br />
+
+      <input type="button" id="boton" value="0" onClick="cambiar();">
 
 
- <div id="timer"> 
-            <input id="minutes" type="text" style="width: 10px; 
-            border: none; font-size: 16px;  
-            font-weight: bold; color: black;"><font size="5">:</font> 
-            <input id="seconds" type="text" style="width: 20px; 
-            border: none; font-size: 16px; 
-            font-weight: bold; color: black;"> 
-            
-        
-    <button onclick="volverAtras()">Página principal</button>
-    <script>
-    function volverAtras() {
-      location.replace("http://localhost:8383/TRIVIAL/principal.html")
-    }
-    </script>
-</div>     
-<section id="main">	
-<header> <h1>CULTURA GENERAL</h1></header>
-<section id="panel">
-	<article id="Pregunta">
-	<p>¿Cuál de las siguientes invocaciones es correcta?</p>
-	</article>
-</section>
-<article id="opciones">
+       <button onclick="volverAtras()">Página principal</button>
+       <script>
+       function volverAtras() {
+         location.replace("http://localhost:8383/TRIVIAL/principal.html")
+       }
+       </script>
+    </div>     
+    <section id="main">	
+        <header> <h1>CULTURA GENERAL</h1></header>
+        <section id="panel">
+                <article id="Pregunta">
+                <p>¿Cuál de las siguientes invocaciones es correcta?</p>
+                </article>
+        </section>
+        <article id="opciones">
 
-</article>
-</section>
+        </article>
+    </section>
 
-
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript" src="preguntados.js"></script>
-<script src="preguntas.js" type="text/javascript"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="preguntados.js"></script>
+    <script src="preguntas.js" type="text/javascript"></script>
 </body>
 </html>
